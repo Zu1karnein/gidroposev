@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>буцаннсервис</title>
+        <link rel="shortcut icon" href="D:/fhoto/logo.png"/>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+ 
+    </head>
+
+    <body>
+        <header>
+            <div id="logo" onclick="slowScroll('#top')">
+                <span><img id="logo" src="images/logo3.png"></span>
+            </div>
+            <div id="menu">
+                <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
+                <a href="#" title="О Кампаии" onclick="slowScroll('#about')">О Кампаии</a>
+                <a href="#" title="Каталог" onclick="slowScroll('#catalog')">Каталог</a>
+                <a href="#" title="Контакты" onclick="slowScroll('#contacts')">Контакты</a>
+            </div>
+        </header>
+
+        <script scr=https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script>
+            function slowScroll(id) {
+                $('body').animate({
+                    slowScroll: $(id).offset().top
+                }, 500)
+            }
+        </script>
+    </body>
+
+</html>
+        

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Suez+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+
+body {
+    background: linear-gradient(#013B2C, #095732);
+    font-family: Trebuchet MS, Helvetica;
+}
+
+header {
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+}
+
+@media (min-width: 700px) {
+    #logo {
+        float: left;
+        width: 33%;
+        height: 10%;
+    }
+
+    #about {
+        float: right;
+        width: 67%;
+    }
+}
+
+@media (max-width: 700px) {
+    #logo {
+        margin-top: 15px;
+        width: 55%;
+        height: 10%;
+    }
+    
+    #menu {
+        float: left;
+        width: 100%;
+    }
+}
+
+
+#menu {
+    text-align: center;
+    font-size: 1em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+
+#menu > a {
+    color: #fff;
+}
+
+#menu > a:hover {
+    color: #b0b0b0;
+    text-decoration: underline;
+}
+
+#menu > a:not(:last-child) {
+    margin-right: 7%;
+}
