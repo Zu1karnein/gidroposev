@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&family=Source+Sans+Pro:wght@200&family=Suez+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(#013B2C, #095732);
+    font-family: Trebuchet MS, Helvetica;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu {
+    list-style: none;
+    padding: 0%;
+    margin-bottom: 0%;
+}
+
+.navbar-menu li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.navbar-menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.logo {
+    width: 200px;
+}
+
+.deskMain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+
+.desk {
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-right: auto;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    color: white;
+    background-color: red;
+}
+
+.desk h6 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+/* .desk2 {
+    margin-top: -30px;
+    margin-left: 200px;
+    margin-right: auto;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    color: white;
+    background-color: red;
+} */
+
+.rightMenu {
+
+    top: 5;
+    bottom: 10;
+    right: 0;
+    float: right;
+    width: 800px;
+    height: 500px;
+    background-color: black;
+}
