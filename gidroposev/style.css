@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&family=Source+Sans+Pro:wght@200&family=Suez+One&display=swap');
 
 
 * {
@@ -7,7 +9,6 @@
     outline: none;
 }
 
-body,
 html {
     width: 100%;
     height: 100%;
@@ -54,14 +55,16 @@ body {
 }
 
 .deskMain {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: blue;
 }
 
-.desk1 {
-    margin-left: 0;
+.desk {
+    margin-top: 30px;
+    margin-left: 25px;
     margin-right: auto;
     height: 50vh;
     align-items: center;
@@ -72,20 +75,28 @@ body {
     background-color: red;
 }
 
-.desk2 {
-    margin-left: 0;
+.desk h6 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+/* .desk2 {
+    margin-top: -30px;
+    margin-left: 200px;
     margin-right: auto;
     height: 50vh;
     align-items: center;
     justify-content: center;
     display: flex;
 
+    color: white;
     background-color: red;
-}
+} */
 
-.desk h6 {
-    font-family: 'Jolly Lodger';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
+.rightMenu {
+    float: right;
+    width: 800px;
+    height: 500px;
+    background-color: black;
 }
