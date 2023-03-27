@@ -55,24 +55,22 @@ body {
 }
 
 .deskMain {
-    width: 100%;
+    width: 124.1%;
+    height: 721px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
 }
 
 .desk {
-    margin-top: 30px;
+    margin-top: -60px;
     margin-left: 25px;
     margin-right: auto;
     height: 50vh;
     align-items: center;
     justify-content: center;
     display: flex;
-
     color: white;
-    background-color: red;
 }
 
 .desk h6 {
@@ -95,15 +93,12 @@ body {
 } */
 
 .rightMenu {
-
+    width: 800px;
+    height: 721px;
     top: 5;
     bottom: 10;
     right: 0;
     float: right;
-    width: 800px;
-    height: 500px;
-    background-color: black;
+    border-top-left-radius: 40px;
+    background-color: #4A6D14;
 }
-
-
-/*lalalalalla*/
