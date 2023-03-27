@@ -21,8 +21,7 @@ body {
 
 .navbar {
     width: 100%;
-    height: 70px;
-    height: inherit;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,26 +50,26 @@ body {
 }
 
 .logo {
-    width: 200px;
+    width: 80px;
+    margin-right: auto;
 }
 
+/* .container {
+    background-color: blue;
+} */
+
 .deskMain {
-    width: 124.1%;
-    height: 721px;
+    margin-top: 180px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .desk {
-    margin-top: -60px;
-    margin-left: 25px;
     margin-right: auto;
-    height: 50vh;
-    align-items: center;
-    justify-content: center;
-    display: flex;
     color: white;
+    display: inline-block;
 }
 
 .desk h6 {
@@ -79,39 +78,34 @@ body {
     font-size: 25px;
 }
 
-/* .desk2 {
-    margin-top: -30px;
-    margin-left: 200px;
-    margin-right: auto;
-    height: 50vh;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-
-    color: white;
-    background-color: red;
-} */
-
 .rightMenu {
-    width: 800px;
-    height: 721px;
-    top: 5;
-    bottom: 10;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
     right: 0;
-    float: right;
+    height: 749px;
+    width: 800px;
     border-top-left-radius: 40px;
     background-color: #4A6D14;
 }
 
 .rightMenu li {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-left: 80px;
+    margin-bottom: 40px;
+    margin-left: 100px;
+    list-style-type: none;
 }
 
 .rightMenu li a {
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     color: #fff;
+}
+
+
+.block2 {
+    background-color: #eee;
+    margin-top: 124px;
+    height: 100vh;
 }
