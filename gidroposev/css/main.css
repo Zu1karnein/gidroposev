@@ -4,7 +4,7 @@
 body {
     color: #000;
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .container {
@@ -89,4 +89,124 @@ body {
 
 .header-content p {
     line-height: 2;
+}
+
+/* About */
+
+.textAbout {
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+.title-0 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+/* Service */
+
+.services {
+    margin-top: 115px;
+    margin-bottom: 238px;
+}
+
+.service-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    column-gap: 29px;
+}
+
+.service-card {
+    width: 271px;
+    height: 171px;
+    background-color: #F1F1F1;
+    box-shadow: 7px 7px 6px 0px #0000001a;
+    display: flex;
+    flex-direction: column;
+}
+  
+.service-card:last-child {
+    margin-right: 0;
+}
+  
+.service-card-title {
+    margin-top: 50px;
+    margin-left: 30px;
+    font-weight: 600;
+    font-size: 24px;
+}
+  
+.service-card p {
+    margin-left: 30px;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.prices {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.service-card.lastCard {
+    margin-top: 30px;
+    margin-left: 450px;
+}
+
+/* Works */
+
+.works {
+    padding: 110px 0;
+    background-color: #F1F1F1;
+}
+
+.work-title {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.title-1 {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.project {
+    text-align: center;
+}
+
+.project-img {
+    margin-bottom: 200px;
+}
+
+/* Footer */
+
+.contacts {
+    padding: 90px 0;
+    text-align: center;
+    background-color: #F1F1F1;
+}
+
+.contacts-title {
+    margin-bottom: 40px;
+}
+
+.contacts-content {
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.contacts-social {
+
+}
+
+.contacts-footer {
+    color: #828282;
+    font-size: 14px;
 }
