@@ -4,117 +4,564 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>газонсервис</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/media.css">
+    
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- RENIX ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet"> 
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Газонсервис</title>
 </head>
-
-<!-- <img class="logo" src="img/header/LOGO.svg"> -->
-
 <body>
 
-    
-    <header class="header"> 
-        <div class="container">
-            <!-- Header nav-->
-            <div class="header-nav">
-                 <a href="https://www.youtube.com/watch?v=OQUZBGWJQwc&t=1s" class="logo">ChrLawn</a>
-
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="#!" class="nav-link active">Главная</a></li>
-                        <li class="nav-item"><a href="#!" class="nav-link">О нас</a></li>
-                        <li class="nav-item"><a href="#!" class="nav-link">Работы</a></li>
-                        <li class="nav-item"><a href="#!" class="nav-link">Цены</a></li>
-                        <li class="nav-item"><a href="#!" class="nav-link">Контакты</a></li>
-                    </ul>
-                </nav>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="https://www.youtube.com/watch?v=OQUZBGWJQwc&t=1s" class="nav__logo">ChrLawn
+            </a>           
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link ">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">О гидропосеве</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#faqs" class="nav__link">О нас</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Работы</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#prices" class="nav__link">Цены</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
             </div>
+            <div class="nav__btns">
 
-
-            <!-- Header content -->
-            <div class="header-row">
-                <div class="heaer-content">
-                    <h1 class="header-heading">Гидропосев</h1>
-                    <p>это метод посева газонной травы, при котором семена смешиваются с водой и распыляются на поверхность земли.</p>
+                <!-- Theme change button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
                 </div>
-                <div class="header-img">
-                    <img src="./img/header/rastenie.png" alt="">
-                </div>
-            </div>    
-        </div>
+            </div>
+        </nav>
     </header>
+    <main class="main">
 
-    <section class="about">
-        <div class="container">
-            <h2 class="textAbout">О нас</h2>
-            <p class="title-0">Мы крутые</p>
-        </div>
-    </section>
-
-    <section class="works">
-        <div class="container">
-            <div class="work-title">
-                <h2 class="title-1">Работы</h2>
-            </div>
-
-            <div class="project">
-                <img src="./img/works/Screenshot_1.png" alt="" class="project-img">
-                <img src="./img/works/Screenshot_2.png" alt="" class="project-img">
-                <img src="./img/works/Screenshot_3.png" alt="" class="project-img">
-                <img src="./img/works/Screenshot_4.png" alt="" class="project-img">
-            </div>
-        </div>
-    </section>
-
-    <section class="services">
-        <div class="container">
-            <h2 class="prices">Цены</h2>
-            <div class="service-row">
-                <div class="service-card">
-                    <h3 class="service-card-title">400-2000м.кв.</h3>
-                    <p>55 руб.</p>
+        <!-- HOME -->
+        <selection class="home" id="home">
+            <div class="home__container container grid">
+                <img src="./img/rastenie.png" alt="" class="home__img">
+                <div class="home__data">
+                        <h1 class="home__title"> <span>Гидропосев</span></h1>
+                    <p class="home__description">это метод посева газонной травы, при котором семена смешиваются
+                         с водой и распыляются на поверхность земли.</p>
+                    <a href="#about" class="button button--flex">
+                        Explore <i class="ri-arrow-right-s-line button__icon"></i>
+                    </a>
                 </div>
-                <div class="service-card">
-                    <h3 class="service-card-title">2000-5000м.кв.</h3>
-                    <p>50 руб.</p>
-                </div>
-                <div class="service-card">
-                    <h3 class="service-card-title">5000-15000м.кв.</h3>
-                    <p>45 руб.</p>
-                </div>
-                <div class="service-card">
-                    <h3 class="service-card-title">15000-30000м.кв.</h3>
-                    <p>40 руб.</p>
+                <div class="home__social">
+                    <span class="home__social-follow">Follow Us</span>
+                    <div class="home__social-links">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/?lang=ru" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="service-card lastCard">
-                <h3 class="service-card-title">15000-30000м.кв.</h3>
-                <p>40 руб.</p>
+        </selection>
+
+<!--==================== ABOUT ====================-->
+    <section class="about section container" id="about">
+        <img src="./img/foto.png" alt="" class= about__foto> 
+        <div class="about__container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        Суть гидропосева состоит в...
+                    </h2>
+                    <p class="about__description">
+                    гидравлическом применение смеси семян, воды, удобрений и красителя, распыляемой на верхний слой почвы. 
+                    Он предназначен для быстрого, экономичного и эффективного восстановления растительности.
+                    </p>
+                    <h2 class="section__title about__title">
+                        Преимущества
+                    </h2>
+                    <p class="about__description">
+                        Комплексная смесь минералов, удобрений и семян обеспечивает множество преимуществ. К ним относятся:
+                    </p>
+                    <div class="about__details">
+                        <h4>Водоотталкивающий</h4>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            Связующее/придающее клейкость по существу действует как «клей»,
+                            удерживающий семена в почве. Эти дополнения помогают семенам
+                            оставаться на месте достаточно долго, чтобы они могли
+                            прорасти, не смываясь дождем . 
+                        </p>
+                        <h4>Ветроустойчивый </h4>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            Гидропосев добавляет в смесь вяжущие и повышающие клейкость
+                            вещества. Эти вещества помогают уменьшить воздействие ветра
+                            и дождя на семена. 
+                        </p>
+                        <h4>Охватывает большие площади</h4>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            Гидропосев является эффективным и жизнеспособным вариантом
+                            быстрого и простого озеленения обширных пространств земли. 
+                            К ним относятся участки земли, которые являются плоскими, 
+                            труднодоступными или имеют значительный уклон.
+                        </p>
+                        <h4>Более быстрое восстановление растительности</h4>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            Гидропосев может восстановить растительность на участке 
+                            намного быстрее, чем методы прямого посева, такие как 
+                            разбрасывание или рядовой посев. 
+                        </p>
+                        <h4>Дешевле, чем газон</h4>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            Гидропосев — гораздо менее затратный способ восстановления
+                            растительности, чем рулонный газон.
+                        </p>
+                        <h4>Может достигать труднодоступные зоны</h4>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            Гидропосев можно использовать для восстановления растительности
+                            на труднодоступных или опасных участках. Он эффективен на ровных
+                            участках, отвалах и даже склонах, что значительно упрощает
+                            задачу обеспечения контроля на обочинах и отвалах почвы.
+                        </p>
+                        <h4>Может использовать местную растительность</h4>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            Гидропосев также подходит для участков, которым требуется местная
+                            растительность. Мы можем предоставить специальные семена и смеси 
+                            удобрений, чтобы оказывать минимальное воздействие на окружающую среду.
+                        </p>
+                        <h4>Привлекательный внешний вид</h4>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            Отслеживающий краситель, добавленный в смесь, не только 
+                            обеспечивает полное восстановление растительности, но и придает земле 
+                            привлекательный вид. Получившаяся аппликация с отслеживающим красителем
+                            будет выглядеть намного лучше, чем область, покрытая только соломой или дерном.
+                        </p>
+                        <h4>Снижение затрат на оплату труда </h4>
+                        <p class="about__details-description">
+                            <i class="ri-checkbox-fill about__details-icon"></i>
+                            Другие методы восстановления растительности, как правило, намного дороже из-за
+                            дополнительных трудовых ресурсов, необходимых для посева или обработки
+                            значительной площади. 
+                        </p>
+                    </div>
+                    <a href="#" class="button--link button--flex">
+                        Shop Now <i class="ri-arrow-right-down-line button__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+            <!--==================== STEPS ====================-->
+        <section class="steps section container">
+            <div class="steps__bg">
+                <h2 class="section__title-center steps__title">
+                    В Гидропосев входит
+                </h2>
+                <div class="steps__container grid">
+                    <div class="steps__card">
+                        <div class="steps__card-number">01</div>
+                        <h3 class="steps__card-title">Семена</h3>
+                        <p class="steps__card-description">
+                        Наша компания отобрала для вас профессиональные семена трав для
+                        решения различных проблем (сухой климат, сложные условия, зелень,
+                        спортивные площадки и т. д.).
+                        </p>
+                    </div>
+                    <div class="steps__card">
+                        <div class="steps__card-number">02</div>
+                        <h3 class="steps__card-title">Мульча</h3>
+                        <p class="steps__card-description">
+                        Мульча сохраняет питательные вещества в почве. Мульчирование
+                        значительно уменьшает количество поливов (в почве дольше сохраняется
+                        влага). Играет защитную роль для почвы, ограничивая испарение и замедляя рост сорняков.
+                        </p>
+                    </div>
+                    <div class="steps__card">
+                        <div class="steps__card-number">03</div>
+                        <h3 class="steps__card-title">Клей & Краситель</h3>
+                        <p class="steps__card-description">
+                        Клей для гидравлического посева почв позволяет склеивать
+                        материалы и защищает от эрозии почвы.
+                        <br> Краситель нужен для того, чтобы была хорошо видна
+                        обработанная жидким составом почва. Для растений совершенно безвреден   
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUESTIONS -->
+        <section class="questions section" id="faqs">  
+            <h2 class="section__title-center question__title container">
+                О нас
+            </h2>
+            <div class="questions__container container grid">
+                <div class="questions__group">
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Качество.
+                            </h3>
+                        </header>
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Профессиональная, внимательная команда к вашим услугам.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Дадим хороший совет.
+                            </h3>
+                        </header>
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Опытная выездная команда предоставит вам технические решения,
+                                адаптированные к вашим потребностям.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Быстрая, четкая и подробная смета.
+                            </h3>
+                        </header>
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Изученные, надежные и справедливые цены, сопровождаемые техническими
+                                паспортами или паспортами безопасности.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Качество продукции.
+                            </h3>
+                        </header>
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Одобренные, сертифицированные или маркированные
+                                профессиональные продукты.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="questions__group">
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Серьезный подход.
+                            </h3>
+                        </header>
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                От подготовки заказа до доставки, внедрение качественного подхода к логистике
+                                имеет важное значение. Каждый шаг тщательно контролируется, чтобы обеспечить
+                                соответствие вашим запросам.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Эффективные сроки.
+                            </h3>
+                        </header>
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Наша продукция доставляется собственными средствами: грузовиком с задним бортом
+                                или фургоном. Для чрезвычайных ситуаций, курьер-перевозчик
+                                каждый день забирает наши грузы для доставки в течение 48 часов (кроме тяжеловесных
+                                грузов, удобрений, грунта, больших объемов и т. д.).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Обучение.
+                            </h3>
+                        </header>
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Наши технические специалисты регулярно проходят обучение новым методам
+                                и новым продуктам, поступающим в ассортимент.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="ri-add-line questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                Устойчивое развитие.
+                            </h3>
+                        </header>
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Предписание наиболее экологически чистых продуктов или технологий.
+                                Управление нашими поставками полными грузовиками благодаря большой
+                                вместимости склада.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTS -->
+        <section class="product section container" id="products">
+            <h2 class="section__title-center">
+                Наши работы
+            </h2>
+            <p class="product__description">
+                Результат после посева газона методом гидропосева
+            </p>
+            <div class="product__container grid">
+                <article class="product__card">
+                    <div class="product__circle"></div>
+                    <img src="./img/01.png" alt="" class="product__img">
+                    <h4 class="product__title"></h4>
+                    <span class="product__price"></span>
+                    <button class="button--flex product__button">
+                    </button>
+                </article>
+                <article class="product__card">
+                    <div class="product__circle"></div>
+                    <img src="./img/02.png" alt="" class="product__img">
+                    <h4 class="product__title"></h4>
+                    <span class="product__price"></span>
+                    <button class="button--flex product__button">
+                    </button>
+                </article>
+                <article class="product__card">
+                    <div class="product__circle"></div>
+                    <img src="./img/03.png" alt="" class="product__img">
+                    <h4 class="product__title"></h4>
+                    <span class="product__price"></span>
+                    <button class="button--flex product__button">
+                    </button>
+                </article>
+                <article class="product__card">
+                    <div class="product__circle"></div>
+                    <img src="./img/04.png" alt="" class="product__img">
+                    <h4 class="product__title"></h4>
+                    <span class="product__price"></span>
+                    <button class="button--flex product__button">
+                    </button>
+                </article>
+                <article class="product__card">
+                    <div class="product__circle"></div>
+                    <img src="./img/05.png" alt="" class="product__img">
+                    <h4 class="product__title"></h4>
+                    <span class="product__price"></span>
+                    <button class="button--flex product__button">
+                    </button>
+                </article>
+                <article class="product__card">
+                    <div class="product__circle"></div>
+                    <img src="./img/06.png" alt="" class="product__img">
+                    <h4 class="product__title"></h4>
+                    <span class="product__price"></span>
+                    <button class="button--flex product__button">
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!--  -->
+        <section class="product section container" id="prices">
+            <h2 class="section__title-center">Цены</h2>
+            <div class="prices-container">
+                <div class="price-block">
+                  <h2>400-2000 м<sup>2</sup></h2>
+                  <p class="price-value">55 руб.</p>
+                  <p class="price-description">Цена за 1 кв.м.</p>
+                </div>
+                <div class="price-block">
+                  <h2>2000-5000 м<sup>2</sup></h2>
+                  <p class="price-value">50 руб.</p>
+                  <p class="price-description">Цена за 1 кв.м.</p>
+                </div>
+                <div class="price-block">
+                  <h2>5000-15000 м<sup>2</sup></h2>
+                  <p class="price-value">45 руб.</p>
+                  <p class="price-description">Цена за 1 кв.м.</p>
+                </div>
+                <div class="price-block">
+                  <h2>15000-30000 м<sup>2</sup></h2>
+                  <p class="price-value">40 руб.</p>
+                  <p class="price-description">Цена за 1 кв.м.</p>
+                </div>
+                <div class="price-block">
+                  <h2>Более 30000 м<sup>2</sup></h2>
+                  <p class="price-value">35 руб.</p>
+                  <p class="price-description">Цена за 1 кв.м.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        <section class="contact section container" id="contact">
+            <div class="contact__container">
+                <div class="contact__box">
+                    <h2 class="section__title">
+                        Свяжитесь с нами через предоставленную информацию
+                    </h2>
+                    <div class="contact__data">
+                        <div class="contact__information">
+                            <h3 class="contact__subtitle">Вызовите профессионалов!</h3>
+                            <span class="contact__description">
+                                <i class="ri-phone-line contact__icon"></i>
+                                +7928-777-77-77
+                            </span>
+                        </div>
+                        <div class="contact__information">
+                            <h3 class="contact__subtitle">Написать в WhatsApp:</h3>
+                            <span class="contact__description">
+                                <i class="ri-whatsapp-line contact__icon"></i>
+                                +7928-777-77-77
+                            </span>
+                        </div>
+                        <div class="contact__information">
+                            <h3 class="contact__subtitle">Написать на почту:</h3>
+                            <span class="contact__description">
+                                <i class="ri-mail-add-line contact__icon"></i>
+                                user@emaill.com
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <div class="contact__content">
+                            <input type="email" placeholder="" class="contact__input">
+                            <label for="" class="contact__label">Email</label>
+                        </div>
+                        <div class="contact__content">
+                            <input type="text" placeholder="" class="contact__input">
+                            <label for="" class="contact__label">Subject</label>
+                        </div>
+                        <div class="contact__content">
+                            <textarea name="message" placeholder="" class="contact__input"></textarea>
+                            <label for="" class="contact__label">Message</label>
+                        </div>
+                    </div>
+                    <button class="button button--flex">
+                        Send Massage
+                        <i class="ri-arrow-right-up-line button__icon"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+</main>
+    
+
+<!-- FOOTER -->
+<footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="https://www.youtube.com/watch?v=OQUZBGWJQwc&t=1s" class="nav__logo">ChrLawn
+                </a>
+                <h3 class="footer__title">
+                    Subscribe to our newsletter <br> to stay update
+                </h3>
+                <div class="footer__subscribe">
+                    <input type="email" placeholder="Enter your email" class="footer__input">
+                    <button class="button button--flex footer__button">
+                        Subscribe
+                        <i class="ri-arrow-right-up-line button__icon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="footer__content">
+                <h4 class="footer__title">Наш адрес</h4>
+
+                <ul class="footer__data">
+                    <li class="footer__information">Чеченская Республика</li>
+                    <li class="footer__information">Город Грозный</li>
+                    <li class="footer__information">123-456-789</li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h4 class="footer__title">Cвязаться с нами</h4>
+                <ul class="footer__data">
+                    <li class="footer__information">+7928-777-77-77</li>   
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/" class="footer__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://twitter.com/" class="footer__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h4 class="footer__title">
+                    Мы принимаем все кредитные карты
+                </h4>
+                <div class="footer__cards">
+                    <img src="./img/card1.png" alt="" class="footer__card">
+                    <img src="./img/card2.png" alt="" class="footer__card">
+                    <img src="./img/card3.png" alt="" class="footer__card">
+                    <img src="./img/card4.png" alt="" class="footer__card">
+                </div>
             </div>
         </div>
-    </section>
+        <p class="footer__copy"></p>
+</footer>
 
-    <footer class="contacts">
-        <div class="container">
-            <div class="contacts-title">
-                <h2 class="title-1">Контакты</h2>
-            </div>
-            <div class="contacts-content">
-                <p>Вызовите профессионалов!<br>+7 777 777 77 77</p>
-            </div>
-            <div class="contacts-social">
-                <a href="#!"><img src="./img/socials/insta.svg" alt="LinkIn"></a>
-            </div>
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
 
-            <div class="contacts-footer">
-                <p>Like us on instagram</p>
-            </div>
-        </div>
-    </footer>
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="./js/scrollreveal.min.js"></script>
 
-
-    <script src="./js/main.js"></script>
-
+<!-- MAIN JS -->
+<script src="./js/main.js"></script>
 </body>
 </html>
